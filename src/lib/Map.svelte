@@ -13,7 +13,6 @@
   onMount(() => {
     const protocol = new pmtiles.Protocol();
     maplibregl.addProtocol("pmtiles", protocol.tile);
-    console.log("mounted");
 
     map = new maplibregl.Map({
       container: container,
@@ -24,7 +23,7 @@
         sources: {
           protomaps: {
             type: "vector",
-            url: `pmtiles://${location.protocol}//${location.host}${location.pathname}/bsb.pmtiles`,
+            url: `https://map.brennn.in/bsb.pmtiles`,
             attribution:
               '<a href="https://protomaps.com">Protomaps</a> © <a href="https://openstreetmap.org">OpenStreetMap</a>',
           },
@@ -39,9 +38,7 @@
       map.setMaxBounds(bounds);
 
       points.forEach((point) => {
-        console.log(point.position);
         const marker = new maplibregl.Marker({
-          color: "#ff0000",
           draggable: false,
           scale: 0.5,
         })
