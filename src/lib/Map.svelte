@@ -3,6 +3,7 @@
   import maplibregl from "maplibre-gl";
   import * as pmtiles from "pmtiles";
   import layers from "protomaps-themes-base";
+  import { navigateTo } from "yrv";
 
   export let points: any[] = [];
 
@@ -43,12 +44,11 @@
           scale: 0.5,
         })
           .setLngLat(point.position)
-          .setPopup(
-            new maplibregl.Popup({ offset: 25 }).setHTML(
-              `<h3>${point.name}</h3>`
-            )
-          )
           .addTo(map);
+
+        marker.getElement().addEventListener("click", () => {
+          navigateTo(`/${point.slug}`);
+        });
       });
     });
   });

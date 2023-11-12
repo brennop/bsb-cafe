@@ -29,7 +29,8 @@
     "@fontsource-variable/nunito": "^5.0.16",
     "maplibre-gl": "^3.6.0",
     "pmtiles": "^2.11.0",
-    "protomaps-themes-base": "^2.0.0-alpha.4"
+    "protomaps-themes-base": "^2.0.0-alpha.4",
+    "yrv": "^0.0.57"
   },
   "packageManager": "yarn@1.22.19"
 }

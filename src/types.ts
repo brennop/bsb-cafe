@@ -9,7 +9,8 @@ export type Cafe = {
   position: [number, number];
   instagram?: string | null;
   tags: Option[];
-  outlets?: Option | null;
   wifi?: string;
   location?: string;
+  id: string;
+  slug: string;
 };

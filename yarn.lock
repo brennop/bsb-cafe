@@ -3885,3 +3885,8 @@ yaml@^2.1.1:
   version "2.3.4"
   resolved "https://registry.yarnpkg.com/yaml/-/yaml-2.3.4.tgz#53fc1d514be80aabf386dc6001eb29bf3b7523b2"
   integrity sha512-8aAvwVUSHpfEqTQ4w/KMlf3HcRdt50E5ODIQJBw1fQ5RL34xabzxtUlzTXVqc4rkZsPbvrXKWnABCD7kWSmocA==
+
+yrv@^0.0.57:
+  version "0.0.57"
+  resolved "https://registry.yarnpkg.com/yrv/-/yrv-0.0.57.tgz#0259531ab5ce766040e9d738972de7fc9412f65e"
+  integrity sha512-aKrepVSVULwrg/eWVt+cahlwWiqo6fuLv5g+Z29Dgt5d718r/6RhoJhgYOQCiTF0zTokbM4FRM/YswDwSqE3fg==
