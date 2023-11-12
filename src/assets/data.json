@@ -1,7 +1,7 @@
 [
   {
     "instagram": null,
-    "Tomadas": null,
+    "outlets": null,
     "tags": [
       {
         "id": "3c636a3b-aa12-403d-bf64-2f7c70052b59",
@@ -10,12 +10,12 @@
       }
     ],
     "price": null,
-    "geo": "15.780397968812556, -47.885057673339915",
+    "geo": "-15.780397968812556, -47.885057673339915",
     "name": "Loma"
   },
   {
     "instagram": null,
-    "Tomadas": {
+    "outlets": {
       "id": "82b0955c-3db5-49d3-a074-47be1323fd70",
       "name": "Algumas",
       "color": "red"
@@ -28,14 +28,14 @@
       }
     ],
     "price": 10.83,
-    "geo": "15.830421236819298, -47.92419285984641",
-    "Onde": "115 Sul",
+    "geo": "-15.830421236819298, -47.92419285984641",
+    "location": "115 Sul",
     "wifi": "Aberto",
     "name": "Ernesto"
   },
   {
     "instagram": "https://instagram.com/ahacafes",
-    "Tomadas": {
+    "outlets": {
       "id": "81c5667e-22c1-42b4-bd04-1e389bc76c73",
       "name": "Muitas",
       "color": "green"
@@ -48,14 +48,14 @@
       }
     ],
     "price": 5.33,
-    "geo": "15.763259753998524, -47.8924694291609",
-    "Onde": "708/709 Norte",
+    "geo": "-15.763428918911984, -47.89261204399813",
+    "location": "708/709 Norte",
     "wifi": "12345678",
     "name": "Aha"
   },
   {
     "instagram": null,
-    "Tomadas": {
+    "outlets": {
       "id": "81c5667e-22c1-42b4-bd04-1e389bc76c73",
       "name": "Muitas",
       "color": "green"
@@ -68,41 +68,41 @@
       }
     ],
     "price": 6.5,
-    "geo": "15.83863401560543, -48.052391128851326",
-    "Onde": "QSA 11 - Taguatinga",
+    "geo": "-15.83863401560543, -48.052391128851326",
+    "location": "QSA 11 - Taguatinga",
     "name": "Vértice"
   },
   {
     "instagram": null,
-    "Tomadas": {
+    "outlets": {
       "id": "82b0955c-3db5-49d3-a074-47be1323fd70",
       "name": "Algumas",
       "color": "red"
     },
     "tags": [],
     "price": 6,
-    "geo": "15.796482085339871, -47.882053918063086",
-    "Onde": "Perto da Rodoviária",
+    "geo": "-15.796376253533825, -47.882067332633824",
+    "location": "Perto da Rodoviária",
     "wifi": "Aberto",
     "name": "SESI LAB"
   },
   {
     "instagram": null,
-    "Tomadas": {
+    "outlets": {
       "id": "388708d2-b95e-47c1-9a58-55441341b001",
       "name": "Poucas",
       "color": "orange"
     },
     "tags": [],
     "price": null,
-    "geo": "15.759875316186015, -47.88059592325139",
-    "Onde": "409 Norte, +",
+    "geo": "-15.759875316186015, -47.88059592325139",
+    "location": "409 Norte, +",
     "wifi": "whitecube",
     "name": "The Coffee"
   },
   {
     "instagram": null,
-    "Tomadas": {
+    "outlets": {
       "id": "81c5667e-22c1-42b4-bd04-1e389bc76c73",
       "name": "Muitas",
       "color": "green"
@@ -115,24 +115,24 @@
       }
     ],
     "price": null,
-    "geo": "15.826621748208689, -47.95348092773956",
-    "Onde": "Casa Park",
+    "geo": "-15.826621748208689, -47.95348092773956",
+    "location": "Casa Park",
     "wifi": "acervocafe",
     "name": "Acervo Café"
   },
   {
     "instagram": "https://instagram.com/lalecafedoceria",
-    "Tomadas": null,
+    "outlets": null,
     "tags": [],
     "price": 7.33,
-    "geo": "15.830347916768314, -47.91597091165824",
-    "Onde": "213 Sul",
+    "geo": "-15.830347916768314, -47.91597091165824",
+    "location": "213 Sul",
     "wifi": "lalelale",
     "name": "Lale"
   },
   {
     "instagram": null,
-    "Tomadas": null,
+    "outlets": null,
     "tags": [
       {
         "id": "3c636a3b-aa12-403d-bf64-2f7c70052b59",
@@ -141,14 +141,14 @@
       }
     ],
     "price": null,
-    "geo": "15.76095556897071, -47.892622686601875",
-    "Onde": "709 Norte",
+    "geo": "-15.76095556897071, -47.892622686601875",
+    "location": "709 Norte",
     "wifi": "cafesplurais",
     "name": "Civita"
   },
   {
     "instagram": null,
-    "Tomadas": null,
+    "outlets": null,
     "tags": [
       {
         "id": "3c636a3b-aa12-403d-bf64-2f7c70052b59",
@@ -157,8 +157,8 @@
       }
     ],
     "price": 7.5,
-    "geo": "15.77745846474873, -47.88262290402664",
-    "Onde": "103 Norte",
+    "geo": "-15.77745846474873, -47.88262290402664",
+    "location": "103 Norte",
     "wifi": "xuxalinda",
     "name": "Quanto"
   }

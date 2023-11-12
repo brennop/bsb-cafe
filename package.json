@@ -25,8 +25,10 @@
     "vite": "^4.4.5"
   },
   "dependencies": {
+    "@fontsource-variable/nunito": "^5.0.16",
     "maplibre-gl": "^3.6.0",
     "pmtiles": "^2.11.0",
     "protomaps-themes-base": "^2.0.0-alpha.4"
-  }
+  },
+  "packageManager": "yarn@1.22.19"
 }

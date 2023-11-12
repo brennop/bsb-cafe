@@ -1,8 +1,10 @@
 <script lang="ts">
-  import { onMount, onDestroy } from 'svelte';
-  import maplibregl from 'maplibre-gl';
-  import * as pmtiles from 'pmtiles';
+  import { onMount, onDestroy } from "svelte";
+  import maplibregl from "maplibre-gl";
+  import * as pmtiles from "pmtiles";
   import layers from "protomaps-themes-base";
+
+  export let points: any[] = [];
 
   let map: maplibregl.Map;
 
@@ -17,23 +19,40 @@
       container: container,
       style: {
         version: 8,
-        glyphs: "https://protomaps.github.io/basemaps-assets/fonts/{fontstack}/{range}.pbf",
+        glyphs:
+          "https://protomaps.github.io/basemaps-assets/fonts/{fontstack}/{range}.pbf",
         sources: {
           protomaps: {
             type: "vector",
             url: `pmtiles://${location.protocol}//${location.host}${location.pathname}/bsb.pmtiles`,
             attribution:
-          '<a href="https://protomaps.com">Protomaps</a> © <a href="https://openstreetmap.org">OpenStreetMap</a>',
-          }
+              '<a href="https://protomaps.com">Protomaps</a> © <a href="https://openstreetmap.org">OpenStreetMap</a>',
+          },
         },
         layers: layers("protomaps", "light"),
-      }
+      },
     });
 
     map.on("load", () => {
       // @ts-ignore
       const bounds = map.getSource("protomaps")?.bounds;
       map.setMaxBounds(bounds);
+
+      points.forEach((point) => {
+        console.log(point.position);
+        const marker = new maplibregl.Marker({
+          color: "#ff0000",
+          draggable: false,
+          scale: 0.5,
+        })
+          .setLngLat(point.position)
+          .setPopup(
+            new maplibregl.Popup({ offset: 25 }).setHTML(
+              `<h3>${point.name}</h3>`
+            )
+          )
+          .addTo(map);
+      });
     });
   });
 
@@ -44,5 +63,5 @@
 </script>
 
 <div class="relative h-96">
-  <div bind:this={container} class="absolute w-full h-full"></div>
+  <div bind:this={container} class="map absolute inset-0 w-full h-full" />
 </div>
