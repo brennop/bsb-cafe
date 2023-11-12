@@ -23,7 +23,7 @@
         sources: {
           protomaps: {
             type: "vector",
-            url: `https://map.brennn.in/bsb.pmtiles`,
+            url: `pmtiles://bsb.pmtiles`,
             attribution:
               '<a href="https://protomaps.com">Protomaps</a> © <a href="https://openstreetmap.org">OpenStreetMap</a>',
           },
