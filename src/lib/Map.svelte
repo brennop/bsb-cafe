@@ -6,7 +6,7 @@
 
   export let points: any[] = [];
 
-  let map: maplibregl.Map;
+  export let map: maplibregl.Map;
 
   let container: HTMLDivElement;
 
@@ -59,6 +59,4 @@
   });
 </script>
 
-<div class="relative h-96">
-  <div bind:this={container} class="map absolute inset-0 w-full h-full" />
-</div>
+<div bind:this={container} class="map w-full h-full" />

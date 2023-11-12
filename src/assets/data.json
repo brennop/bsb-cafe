@@ -1,6 +1,6 @@
 [
   {
-    "instagram": null,
+    "instagram": "https://www.instagram.com/lomacozinha/",
     "outlets": null,
     "tags": [
       {
@@ -11,10 +11,11 @@
     ],
     "price": null,
     "geo": "-15.780397968812556, -47.885057673339915",
+    "location": "CLN 303, Bloco B, Loja 6 - Asa Norte",
     "name": "Loma"
   },
   {
-    "instagram": null,
+    "instagram": "https://www.instagram.com/ernestocafesespeciais/",
     "outlets": {
       "id": "82b0955c-3db5-49d3-a074-47be1323fd70",
       "name": "Algumas",
@@ -29,7 +30,7 @@
     ],
     "price": 10.83,
     "geo": "-15.830421236819298, -47.92419285984641",
-    "location": "115 Sul",
+    "location": "CLS 115, Bloco C, Loja 14 - Asa Sul",
     "wifi": "Aberto",
     "name": "Ernesto"
   },
@@ -49,12 +50,12 @@
     ],
     "price": 5.33,
     "geo": "-15.763428918911984, -47.89261204399813",
-    "location": "708/709 Norte",
+    "location": "SCRN 708/709, Bloco G, Loja 20 - Asa Norte",
     "wifi": "12345678",
     "name": "Aha"
   },
   {
-    "instagram": null,
+    "instagram": "https://www.instagram.com/vertice.cafe/",
     "outlets": {
       "id": "81c5667e-22c1-42b4-bd04-1e389bc76c73",
       "name": "Muitas",
@@ -69,11 +70,11 @@
     ],
     "price": 6.5,
     "geo": "-15.83863401560543, -48.052391128851326",
-    "location": "QSA 11 - Taguatinga",
+    "location": "QSA 11, Loja 17, Taguatinga",
     "name": "Vértice"
   },
   {
-    "instagram": null,
+    "instagram": "https://www.instagram.com/sesi.lab/",
     "outlets": {
       "id": "82b0955c-3db5-49d3-a074-47be1323fd70",
       "name": "Algumas",
@@ -87,7 +88,7 @@
     "name": "SESI LAB"
   },
   {
-    "instagram": null,
+    "instagram": "https://www.instagram.com/thecoffee.jp/",
     "outlets": {
       "id": "388708d2-b95e-47c1-9a58-55441341b001",
       "name": "Poucas",
@@ -96,12 +97,12 @@
     "tags": [],
     "price": null,
     "geo": "-15.759875316186015, -47.88059592325139",
-    "location": "409 Norte, +",
+    "location": "409 Norte",
     "wifi": "whitecube",
     "name": "The Coffee"
   },
   {
-    "instagram": null,
+    "instagram": "https://www.instagram.com/acervocafe/",
     "outlets": {
       "id": "81c5667e-22c1-42b4-bd04-1e389bc76c73",
       "name": "Muitas",
@@ -126,12 +127,12 @@
     "tags": [],
     "price": 7.33,
     "geo": "-15.830347916768314, -47.91597091165824",
-    "location": "213 Sul",
+    "location": "CLS 213, Bloco A, loja 37 - Asa Sul",
     "wifi": "lalelale",
     "name": "Lale"
   },
   {
-    "instagram": null,
+    "instagram": "https://www.instagram.com/civitacafe/",
     "outlets": null,
     "tags": [
       {
@@ -142,12 +143,12 @@
     ],
     "price": null,
     "geo": "-15.76095556897071, -47.892622686601875",
-    "location": "709 Norte",
+    "location": "SCLRN 709, bloco F, loja 55 - Asa Norte",
     "wifi": "cafesplurais",
     "name": "Civita"
   },
   {
-    "instagram": null,
+    "instagram": "https://www.instagram.com/quanto.cafe/",
     "outlets": null,
     "tags": [
       {
@@ -158,7 +159,7 @@
     ],
     "price": 7.5,
     "geo": "-15.77745846474873, -47.88262290402664",
-    "location": "103 Norte",
+    "location": "CLN 103, Bloco A - Asa Norte",
     "wifi": "xuxalinda",
     "name": "Quanto"
   }
