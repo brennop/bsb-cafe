@@ -13,4 +13,5 @@ export type Cafe = {
   location?: string;
   id: string;
   slug: string;
+  region: Option;
 };

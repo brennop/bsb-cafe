@@ -9,7 +9,7 @@ const notion = new Client({
   auth: key,
 });
 
-notion.databases
+const dataQuery = () => notion.databases
   .query({
     database_id: id,
   })
@@ -42,3 +42,14 @@ notion.databases
   .then((data) => {
     fs.writeFileSync("./src/assets/data.json", data);
   });
+
+const metadataQuery = () => notion.databases.retrieve({
+  database_id: id,
+}).then((response) => {
+    return JSON.stringify(response.properties, null, 2);
+}).then((data) => {
+  fs.writeFileSync("./src/assets/metadata.json", data);
+});
+
+dataQuery();
+metadataQuery();

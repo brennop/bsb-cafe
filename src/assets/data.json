@@ -116,7 +116,7 @@
     "region": {
       "id": "yMcX",
       "name": "Asa Sul",
-      "color": "default"
+      "color": "purple"
     },
     "wifi": "Aberto",
     "name": "Ernesto",
@@ -132,7 +132,7 @@
     "region": {
       "id": "yMcX",
       "name": "Asa Sul",
-      "color": "default"
+      "color": "purple"
     },
     "wifi": "lalelale",
     "name": "Lale",
@@ -197,7 +197,7 @@
     "region": {
       "id": "yMcX",
       "name": "Asa Sul",
-      "color": "default"
+      "color": "purple"
     },
     "wifi": "Aberto",
     "name": "SESI LAB",
@@ -272,7 +272,7 @@
     "region": {
       "id": "061d085a-4f9d-47f6-9b2b-e2d2e121de5b",
       "name": "Taguatinga",
-      "color": "gray"
+      "color": "blue"
     },
     "name": "Vértice",
     "id": "065cec32"

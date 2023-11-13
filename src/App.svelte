@@ -1,10 +1,11 @@
 <script lang="ts">
+  import type { Cafe } from "./types";
+
   import Map from "./lib/Map.svelte";
-  import Item from "./lib/Item.svelte";
   import Detailed from "./lib/Detailed.svelte";
+  import List from "./lib/List.svelte";
 
   import data from "./assets/data.json";
-  import type { Cafe } from "./types";
   import { Router, Route } from "yrv";
 
   const cafes: Cafe[] = data.map((point) => {
@@ -26,13 +27,7 @@
   <Router>
     <Route exact>
       <h1 class="text-4xl font-bold p-3 bg-orange-50">☕ café em bsb</h1>
-      <section
-        class="max-w-md w-full mx-auto p-3 flex flex-col gap-4 overflow-y-auto"
-      >
-        {#each cafes as cafe}
-          <Item {cafe} />
-        {/each}
-      </section>
+      <List {cafes} />
     </Route>
     <Route path="/:slug" let:router>
       <Detailed
