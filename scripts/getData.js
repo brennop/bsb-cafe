@@ -33,6 +33,10 @@ notion.databases
       };
     });
 
+    data.sort((a, b) => {
+      return a.name.localeCompare(b.name);
+    });
+
     return JSON.stringify(data, null, 2);
   })
   .then((data) => {

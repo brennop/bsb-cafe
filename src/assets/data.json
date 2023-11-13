@@ -1,23 +1,7 @@
 [
   {
-    "slug": "loma",
-    "instagram": "https://www.instagram.com/lomacozinha/",
-    "tags": [
-      {
-        "id": "3c636a3b-aa12-403d-bf64-2f7c70052b59",
-        "name": "🌱",
-        "color": "green"
-      }
-    ],
-    "price": null,
-    "geo": "-15.780397968812556, -47.885057673339915",
-    "location": "CLN 303, Bloco B, Loja 6 - Asa Norte",
-    "name": "Loma",
-    "id": "491180b4"
-  },
-  {
-    "slug": "ernesto-sul",
-    "instagram": "https://www.instagram.com/ernestocafesespeciais/",
+    "slug": "acervo",
+    "instagram": "https://www.instagram.com/acervocafe/",
     "tags": [
       {
         "id": "3c636a3b-aa12-403d-bf64-2f7c70052b59",
@@ -25,17 +9,27 @@
         "color": "green"
       },
       {
-        "id": "58fe22cd-6c77-41dd-b714-14b15f4bbfeb",
-        "name": "🔌",
-        "color": "blue"
+        "id": "318d1b7b-8ace-4170-afaf-a0d1f4cf3295",
+        "name": "🔌🔌",
+        "color": "yellow"
+      },
+      {
+        "id": "28b6e9c7-3279-4567-948f-dd8f052cb7cf",
+        "name": "⭐️",
+        "color": "brown"
+      },
+      {
+        "id": "150c3171-1f0d-4777-8c4e-b6788041ad51",
+        "name": "💲💲",
+        "color": "purple"
       }
     ],
-    "price": 10.83,
-    "geo": "-15.830421236819298, -47.92419285984641",
-    "location": "CLS 115, Bloco C, Loja 14 - Asa Sul",
-    "wifi": "Aberto",
-    "name": "Ernesto",
-    "id": "8b70abeb"
+    "price": null,
+    "geo": "-15.826621748208689, -47.95348092773956",
+    "location": "Casa Park",
+    "wifi": "acervocafe",
+    "name": "Acervo Café",
+    "id": "e52dcb5b"
   },
   {
     "slug": "aha",
@@ -60,8 +54,8 @@
     "id": "390f237c"
   },
   {
-    "slug": "vertice",
-    "instagram": "https://www.instagram.com/vertice.cafe/",
+    "slug": "civita",
+    "instagram": "https://www.instagram.com/civitacafe/",
     "tags": [
       {
         "id": "3c636a3b-aa12-403d-bf64-2f7c70052b59",
@@ -69,16 +63,88 @@
         "color": "green"
       },
       {
-        "id": "318d1b7b-8ace-4170-afaf-a0d1f4cf3295",
-        "name": "🔌🔌",
-        "color": "yellow"
+        "id": "28b6e9c7-3279-4567-948f-dd8f052cb7cf",
+        "name": "⭐️",
+        "color": "brown"
       }
     ],
-    "price": 6.5,
-    "geo": "-15.83863401560543, -48.052391128851326",
-    "location": "QSA 11, Loja 17, Taguatinga",
-    "name": "Vértice",
-    "id": "065cec32"
+    "price": null,
+    "geo": "-15.76095556897071, -47.892622686601875",
+    "location": "SCLRN 709, bloco F, loja 55 - Asa Norte",
+    "wifi": "cafesplurais",
+    "name": "Civita",
+    "id": "a1975138"
+  },
+  {
+    "slug": "ernesto-sul",
+    "instagram": "https://www.instagram.com/ernestocafesespeciais/",
+    "tags": [
+      {
+        "id": "3c636a3b-aa12-403d-bf64-2f7c70052b59",
+        "name": "🌱",
+        "color": "green"
+      },
+      {
+        "id": "58fe22cd-6c77-41dd-b714-14b15f4bbfeb",
+        "name": "🔌",
+        "color": "blue"
+      },
+      {
+        "id": "fe20e30c-345e-4b5f-9ce6-95f38341c2c6",
+        "name": "💲",
+        "color": "red"
+      }
+    ],
+    "price": 10.83,
+    "geo": "-15.830421236819298, -47.92419285984641",
+    "location": "CLS 115, Bloco C, Loja 14 - Asa Sul",
+    "wifi": "Aberto",
+    "name": "Ernesto",
+    "id": "8b70abeb"
+  },
+  {
+    "slug": "lale",
+    "instagram": "https://instagram.com/lalecafedoceria",
+    "tags": [],
+    "price": 7.33,
+    "geo": "-15.830347916768314, -47.91597091165824",
+    "location": "CLS 213, Bloco A, loja 37 - Asa Sul",
+    "wifi": "lalelale",
+    "name": "Lale",
+    "id": "cdacc5f7"
+  },
+  {
+    "slug": "loma",
+    "instagram": "https://www.instagram.com/lomacozinha/",
+    "tags": [
+      {
+        "id": "3c636a3b-aa12-403d-bf64-2f7c70052b59",
+        "name": "🌱",
+        "color": "green"
+      }
+    ],
+    "price": null,
+    "geo": "-15.780397968812556, -47.885057673339915",
+    "location": "CLN 303, Bloco B, Loja 6 - Asa Norte",
+    "name": "Loma",
+    "id": "491180b4"
+  },
+  {
+    "slug": "quanto",
+    "instagram": "https://www.instagram.com/quanto.cafe/",
+    "tags": [
+      {
+        "id": "3c636a3b-aa12-403d-bf64-2f7c70052b59",
+        "name": "🌱",
+        "color": "green"
+      }
+    ],
+    "price": 7.5,
+    "geo": "-15.77745846474873, -47.88262290402664",
+    "location": "CLN 103, Bloco A - Asa Norte",
+    "wifi": "xuxalinda",
+    "name": "Quanto",
+    "id": "bbd85d2d"
   },
   {
     "slug": "sesilab",
@@ -115,8 +181,8 @@
     "id": "1bc0fdb1"
   },
   {
-    "slug": "acervo",
-    "instagram": "https://www.instagram.com/acervocafe/",
+    "slug": "vertice",
+    "instagram": "https://www.instagram.com/vertice.cafe/",
     "tags": [
       {
         "id": "3c636a3b-aa12-403d-bf64-2f7c70052b59",
@@ -129,56 +195,10 @@
         "color": "yellow"
       }
     ],
-    "price": null,
-    "geo": "-15.826621748208689, -47.95348092773956",
-    "location": "Casa Park",
-    "wifi": "acervocafe",
-    "name": "Acervo Café",
-    "id": "e52dcb5b"
-  },
-  {
-    "slug": "lale",
-    "instagram": "https://instagram.com/lalecafedoceria",
-    "tags": [],
-    "price": 7.33,
-    "geo": "-15.830347916768314, -47.91597091165824",
-    "location": "CLS 213, Bloco A, loja 37 - Asa Sul",
-    "wifi": "lalelale",
-    "name": "Lale",
-    "id": "cdacc5f7"
-  },
-  {
-    "slug": "civita",
-    "instagram": "https://www.instagram.com/civitacafe/",
-    "tags": [
-      {
-        "id": "3c636a3b-aa12-403d-bf64-2f7c70052b59",
-        "name": "🌱",
-        "color": "green"
-      }
-    ],
-    "price": null,
-    "geo": "-15.76095556897071, -47.892622686601875",
-    "location": "SCLRN 709, bloco F, loja 55 - Asa Norte",
-    "wifi": "cafesplurais",
-    "name": "Civita",
-    "id": "a1975138"
-  },
-  {
-    "slug": "quanto",
-    "instagram": "https://www.instagram.com/quanto.cafe/",
-    "tags": [
-      {
-        "id": "3c636a3b-aa12-403d-bf64-2f7c70052b59",
-        "name": "🌱",
-        "color": "green"
-      }
-    ],
-    "price": 7.5,
-    "geo": "-15.77745846474873, -47.88262290402664",
-    "location": "CLN 103, Bloco A - Asa Norte",
-    "wifi": "xuxalinda",
-    "name": "Quanto",
-    "id": "bbd85d2d"
+    "price": 6.5,
+    "geo": "-15.83863401560543, -48.052391128851326",
+    "location": "QSA 11, Loja 17, Taguatinga",
+    "name": "Vértice",
+    "id": "065cec32"
   }
 ]

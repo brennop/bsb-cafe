@@ -8,7 +8,7 @@
 
   $: click(cafe);
 
-  const handle = cafe.instagram
+  $: handle = cafe.instagram
     ?.replace(/https?:\/\/(www\.)?instagram\.com\//, "@")
     .replace(/\//, "");
 </script>

@@ -41,7 +41,7 @@
       points.forEach((point) => {
         const marker = new maplibregl.Marker({
           draggable: false,
-          scale: 0.5,
+          scale: 1.0,
         })
           .setLngLat(point.position)
           .addTo(map);
