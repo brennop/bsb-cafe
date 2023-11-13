@@ -26,7 +26,9 @@
   <Router>
     <Route exact>
       <h1 class="text-4xl font-bold p-3 bg-orange-50">☕ café em bsb</h1>
-      <section class="max-w-md w-full mx-auto p-3 flex flex-col gap-4 overflow-y-auto">
+      <section
+        class="max-w-md w-full mx-auto p-3 flex flex-col gap-4 overflow-y-auto"
+      >
         {#each cafes as cafe}
           <Item {cafe} />
         {/each}
@@ -39,4 +41,10 @@
       />
     </Route>
   </Router>
+  <footer class="text-center text-xs text-orange-800 p-3">
+    feito com <span class="text-red-500">☕</span> por
+    <a href="https://brennn.in" target="_blank" rel="noopener noreferrer">
+      brennin
+    </a>
+  </footer>
 </main>
