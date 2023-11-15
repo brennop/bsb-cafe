@@ -1,23 +1,28 @@
-<script lang="ts">
+<script>
   import { onMount, onDestroy } from "svelte";
   import maplibregl from "maplibre-gl";
   import * as pmtiles from "pmtiles";
   import layers from "protomaps-themes-base";
-  import { Link, router } from "yrv";
+  import { page } from "$app/stores";
 
-  export let points: any[] = [];
-  let elements: HTMLDivElement[] = [];
+  /** @type {Array<Cafe>} */
+  export let points = [];
 
-  export let map: maplibregl.Map;
+  /** @type {HTMLDivElement[]} */
+  let elements = [];
 
-  let container: HTMLDivElement;
+  /** @type {import("maplibre-gl").Map} */
+  export let map;
+
+  /** @type {HTMLDivElement} */
+  let container;
 
   onMount(() => {
     const protocol = new pmtiles.Protocol();
     maplibregl.addProtocol("pmtiles", protocol.tile);
 
     map = new maplibregl.Map({
-      container: container,
+      container,
       style: {
         version: 8,
         glyphs:
@@ -58,7 +63,7 @@
     maplibregl.removeProtocol("pmtiles");
   });
 
-  $: slug = $router.params.slug;
+  $: slug = $page.params.slug;
 </script>
 
 <div bind:this={container} class="map w-full h-full" />
@@ -66,14 +71,15 @@
 <div>
   {#each points as point, index}
     <div class="z-10" bind:this={elements[index]}>
-      <Link href={`/${point.slug}`} class="flex flex-col items-center">
+      <a href={`/${point.slug}`} class="flex flex-col items-center relative">
         {#if slug === point.slug}
-          <span class="bg-orange-100 px-1 py-0.5 rounded">
+          <span class="text-xs bg-orange-100 px-1 py-0.5 rounded absolute -top-6 w-max ">
             {point.name}
           </span>
         {/if}
-        <span class="text-xl"> 📍 </span>
-      </Link>
+        <span class="text-lg h-8 w-8 rounded-full bg-orange-100 text-white flex items-center justify-center border-orange-800 border-2">
+          ☕</span>
+      </a>
     </div>
   {/each}
 </div>

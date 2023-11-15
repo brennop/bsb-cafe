@@ -1,12 +1,11 @@
-<script lang="ts">
-  import type { Cafe } from "../types";
+<script>
+  /** @type {Cafe} */
+  export let cafe;
+  import { getContext } from "svelte";
 
-  import { Link } from "yrv";
+  const map = getContext("map");
 
-  export let cafe: Cafe;
-  export let click: (cafe: Cafe) => void;
-
-  $: click(cafe);
+  $: $map?.flyTo({ center: cafe.position, zoom: 15, speed: 1.0 });
 
   $: handle = cafe.instagram
     ?.replace(/https?:\/\/(www\.)?instagram\.com\//, "@")
@@ -14,13 +13,15 @@
 </script>
 
 <h1 class="text-4xl font-bold p-3 bg-orange-50">
-  <Link href="/" class="mr-2">☕</Link>
+  <a href="/" class="mr-2">☕</a>
   {cafe.name}
 </h1>
 <section class="max-w-md w-full mx-auto p-3 overflow-y-auto flex-1">
   <div class="flex items-center gap-2">
     {#each cafe.tags as tag}
-      <span class="text-orange-800 bg-orange-100 px-1 py-0.5 rounded">{tag.name}</span>
+      <span class="text-orange-800 bg-orange-100 px-1 py-0.5 rounded"
+        >{tag.name}</span
+      >
     {/each}
   </div>
   {#if handle}

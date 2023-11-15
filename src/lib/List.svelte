@@ -1,5 +1,4 @@
 <script lang="ts">
-  import type { Cafe, Option } from "../types";
   import Item from "./Item.svelte";
   import Badge from "./Badge.svelte";
   import metadata from "../assets/metadata.json";
