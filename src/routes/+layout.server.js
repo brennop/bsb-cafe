@@ -1,326 +1,76 @@
-const cafes = [
-  {
-    "slug": "acervo",
-    "instagram": "https://www.instagram.com/acervocafe/",
-    "tags": [
-      {
-        "id": "3c636a3b-aa12-403d-bf64-2f7c70052b59",
-        "name": "🌱",
-        "color": "green"
-      },
-      {
-        "id": "318d1b7b-8ace-4170-afaf-a0d1f4cf3295",
-        "name": "🔌🔌",
-        "color": "yellow"
-      },
-      {
-        "id": "28b6e9c7-3279-4567-948f-dd8f052cb7cf",
-        "name": "⭐️",
-        "color": "brown"
-      },
-      {
-        "id": "150c3171-1f0d-4777-8c4e-b6788041ad51",
-        "name": "💲💲",
-        "color": "purple"
-      }
-    ],
-    "price": null,
-    "geo": "-15.826621748208689, -47.95348092773956",
-    "location": "Casa Park",
-    "region": {
-      "id": "6f723b77-c87c-4209-99cc-3484a03eca3b",
-      "name": "Guará",
-      "color": "yellow"
-    },
-    "wifi": "acervocafe",
-    "name": "Acervo Café",
-    "id": "e52dcb5b"
-  },
-  {
-    "slug": "aha",
-    "instagram": "https://instagram.com/ahacafes",
-    "tags": [
-      {
-        "id": "3c636a3b-aa12-403d-bf64-2f7c70052b59",
-        "name": "🌱",
-        "color": "green"
-      },
-      {
-        "id": "318d1b7b-8ace-4170-afaf-a0d1f4cf3295",
-        "name": "🔌🔌",
-        "color": "yellow"
-      }
-    ],
-    "price": 5.33,
-    "geo": "-15.763428918911984, -47.89261204399813",
-    "location": "SCRN 708/709, Bloco G, Loja 20 - Asa Norte",
-    "region": {
-      "id": "959fbc39-9947-43a1-962a-d96d3d4d8784",
-      "name": "Asa Norte",
-      "color": "red"
-    },
-    "wifi": "12345678",
-    "name": "Aha",
-    "id": "390f237c"
-  },
-  {
-    "slug": "antonieta",
-    "instagram": "https://www.instagram.com/antonietacafe/",
-    "tags": [
-      {
-        "id": "58fe22cd-6c77-41dd-b714-14b15f4bbfeb",
-        "name": "🔌",
-        "color": "blue"
-      },
-      {
-        "id": "fe20e30c-345e-4b5f-9ce6-95f38341c2c6",
-        "name": "💲",
-        "color": "red"
-      },
-      {
-        "id": "cc66dbb0-fae4-4ec9-9e0a-a41e0e27c15b",
-        "name": "🍹",
-        "color": "default"
-      }
-    ],
-    "price": 10,
-    "geo": "-15.739972761177627, -47.899375872800995",
-    "location": "SCLRN 716 Bloco F Loja 47",
-    "region": {
-      "id": "959fbc39-9947-43a1-962a-d96d3d4d8784",
-      "name": "Asa Norte",
-      "color": "red"
-    },
-    "wifi": "tiramisu",
-    "name": "antonieta",
-    "id": "ef064c29"
-  },
-  {
-    "slug": "civita",
-    "instagram": "https://www.instagram.com/civitacafe/",
-    "tags": [
-      {
-        "id": "3c636a3b-aa12-403d-bf64-2f7c70052b59",
-        "name": "🌱",
-        "color": "green"
-      },
-      {
-        "id": "28b6e9c7-3279-4567-948f-dd8f052cb7cf",
-        "name": "⭐️",
-        "color": "brown"
-      }
-    ],
-    "price": null,
-    "geo": "-15.76095556897071, -47.892622686601875",
-    "location": "SCLRN 709, bloco F, loja 55 - Asa Norte",
-    "region": {
-      "id": "959fbc39-9947-43a1-962a-d96d3d4d8784",
-      "name": "Asa Norte",
-      "color": "red"
-    },
-    "wifi": "cafesplurais",
-    "name": "Civita",
-    "id": "a1975138"
-  },
-  {
-    "slug": "ernesto-sul",
-    "instagram": "https://www.instagram.com/ernestocafesespeciais/",
-    "tags": [
-      {
-        "id": "3c636a3b-aa12-403d-bf64-2f7c70052b59",
-        "name": "🌱",
-        "color": "green"
-      },
-      {
-        "id": "58fe22cd-6c77-41dd-b714-14b15f4bbfeb",
-        "name": "🔌",
-        "color": "blue"
-      },
-      {
-        "id": "fe20e30c-345e-4b5f-9ce6-95f38341c2c6",
-        "name": "💲",
-        "color": "red"
-      }
-    ],
-    "price": 10.83,
-    "geo": "-15.830421236819298, -47.92419285984641",
-    "location": "CLS 115, Bloco C, Loja 14 - Asa Sul",
-    "region": {
-      "id": "yMcX",
-      "name": "Asa Sul",
-      "color": "purple"
-    },
-    "wifi": "Aberto",
-    "name": "Ernesto",
-    "id": "8b70abeb"
-  },
-  {
-    "slug": "lale",
-    "instagram": "https://instagram.com/lalecafedoceria",
-    "tags": [],
-    "price": 7.33,
-    "geo": "-15.830347916768314, -47.91597091165824",
-    "location": "CLS 213, Bloco A, loja 37 - Asa Sul",
-    "region": {
-      "id": "yMcX",
-      "name": "Asa Sul",
-      "color": "purple"
-    },
-    "wifi": "lalelale",
-    "name": "Lale",
-    "id": "cdacc5f7"
-  },
-  {
-    "slug": "loma",
-    "instagram": "https://www.instagram.com/lomacozinha/",
-    "tags": [
-      {
-        "id": "3c636a3b-aa12-403d-bf64-2f7c70052b59",
-        "name": "🌱",
-        "color": "green"
-      }
-    ],
-    "price": null,
-    "geo": "-15.780397968812556, -47.885057673339915",
-    "location": "CLN 303, Bloco B, Loja 6 - Asa Norte",
-    "region": {
-      "id": "959fbc39-9947-43a1-962a-d96d3d4d8784",
-      "name": "Asa Norte",
-      "color": "red"
-    },
-    "name": "Loma",
-    "id": "491180b4"
-  },
-  {
-    "slug": "quanto",
-    "instagram": "https://www.instagram.com/quanto.cafe/",
-    "tags": [
-      {
-        "id": "3c636a3b-aa12-403d-bf64-2f7c70052b59",
-        "name": "🌱",
-        "color": "green"
-      }
-    ],
-    "price": 7.5,
-    "geo": "-15.77745846474873, -47.88262290402664",
-    "location": "CLN 103, Bloco A - Asa Norte",
-    "region": {
-      "id": "959fbc39-9947-43a1-962a-d96d3d4d8784",
-      "name": "Asa Norte",
-      "color": "red"
-    },
-    "wifi": "xuxalinda",
-    "name": "Quanto",
-    "id": "bbd85d2d"
-  },
-  {
-    "slug": "sesilab",
-    "instagram": "https://www.instagram.com/sesi.lab/",
-    "tags": [
-      {
-        "id": "58fe22cd-6c77-41dd-b714-14b15f4bbfeb",
-        "name": "🔌",
-        "color": "blue"
-      }
-    ],
-    "price": 6,
-    "geo": "-15.796376253533825, -47.882067332633824",
-    "location": "Perto da Rodoviária",
-    "region": {
-      "id": "yMcX",
-      "name": "Asa Sul",
-      "color": "purple"
-    },
-    "wifi": "Aberto",
-    "name": "SESI LAB",
-    "id": "2eddefef"
-  },
-  {
-    "slug": "coffee409",
-    "instagram": "https://www.instagram.com/thecoffee.jp/",
-    "tags": [
-      {
-        "id": "58fe22cd-6c77-41dd-b714-14b15f4bbfeb",
-        "name": "🔌",
-        "color": "blue"
-      }
-    ],
-    "price": null,
-    "geo": "-15.759875316186015, -47.88059592325139",
-    "location": "409 Norte",
-    "region": {
-      "id": "959fbc39-9947-43a1-962a-d96d3d4d8784",
-      "name": "Asa Norte",
-      "color": "red"
-    },
-    "wifi": "whitecube",
-    "name": "The Coffee",
-    "id": "1bc0fdb1"
-  },
-  {
-    "slug": "vert",
-    "instagram": "https://www.instagram.com/vertcafebr/",
-    "tags": [
-      {
-        "id": "3c636a3b-aa12-403d-bf64-2f7c70052b59",
-        "name": "🌱",
-        "color": "green"
-      },
-      {
-        "id": "58fe22cd-6c77-41dd-b714-14b15f4bbfeb",
-        "name": "🔌",
-        "color": "blue"
-      }
-    ],
-    "price": null,
-    "geo": "-15.837601689195653, -48.01425824947451",
-    "location": "Av. Araucárias lote 785",
-    "region": {
-      "id": "082652e0-1451-4fb8-b520-4364d8e941cb",
-      "name": "Águas Claras",
-      "color": "green"
-    },
-    "name": "Vert",
-    "id": "25eaad0f"
-  },
-  {
-    "slug": "vertice",
-    "instagram": "https://www.instagram.com/vertice.cafe/",
-    "tags": [
-      {
-        "id": "3c636a3b-aa12-403d-bf64-2f7c70052b59",
-        "name": "🌱",
-        "color": "green"
-      },
-      {
-        "id": "318d1b7b-8ace-4170-afaf-a0d1f4cf3295",
-        "name": "🔌🔌",
-        "color": "yellow"
-      }
-    ],
-    "price": 6.5,
-    "geo": "-15.83863401560543, -48.052391128851326",
-    "location": "QSA 11, Loja 17, Taguatinga",
-    "region": {
-      "id": "061d085a-4f9d-47f6-9b2b-e2d2e121de5b",
-      "name": "Taguatinga",
-      "color": "blue"
-    },
-    "name": "Vértice",
-    "id": "065cec32"
-  }
-]
+import { Client } from "@notionhq/client";
+import "dotenv/config";
+
+const key = process.env.NOTION_KEY;
+const id = process.env.NOTION_PAGE_ID;
+
+const notion = new Client({
+  auth: key,
+});
+
+const dataQuery = () =>
+  notion.databases
+    .query({
+      database_id: id || "",
+    })
+    .then((response) => {
+      const data = response.results.map((page) => {
+        // @ts-ignore
+        const properties = Object.entries(page.properties);
+
+        const transformed = properties.map(([key, value]) => {
+          if (value.type === "rich_text" || value.type === "title") {
+            return [key, value[value.type][0]?.plain_text];
+          }
+
+          return [key, value[value.type]];
+        });
+
+        const [id] = page.id.split("-");
+
+        return {
+          ...Object.fromEntries(transformed),
+          id,
+        };
+      });
+
+      data.sort((a, b) => {
+        return a.name.localeCompare(b.name);
+      });
+
+      return data;
+    })
+    .then((data) => {
+      return data.map((cafe) => {
+        // @ts-ignore
+        const [lat, lng] = cafe.geo.split(",").map((n) => parseFloat(n));
+        const position = [lng, lat];
+        return { ...cafe, position };
+      });
+    });
+
+const metadataQuery = () =>
+  notion.databases
+    .retrieve({
+      database_id: id || "",
+    })
+    .then((response) => {
+      return response.properties;
+    });
 
 /** @type {import('./$types').LayoutServerLoad} */
 export async function load() {
+  /** @type {Cafe[]} */
+  const cafes = await dataQuery();
+
   return {
-    cafes: cafes.map((point) => {
-      const [lat, lng] = point.geo.split(",").map((n) => parseFloat(n));
-
-      /** @type {[number, number]} */
-      const position = [lng, lat];
-
-      return { ...point, position };
-    })
+    cafes,
   };
+}
+
+export const config = {
+  isr: {
+    // 6 hours
+    expiration: 60 * 60 * 6,
+  },
 }
