@@ -64,6 +64,38 @@
     "id": "390f237c"
   },
   {
+    "slug": "antonieta",
+    "instagram": "https://www.instagram.com/antonietacafe/",
+    "tags": [
+      {
+        "id": "58fe22cd-6c77-41dd-b714-14b15f4bbfeb",
+        "name": "🔌",
+        "color": "blue"
+      },
+      {
+        "id": "fe20e30c-345e-4b5f-9ce6-95f38341c2c6",
+        "name": "💲",
+        "color": "red"
+      },
+      {
+        "id": "cc66dbb0-fae4-4ec9-9e0a-a41e0e27c15b",
+        "name": "🍹",
+        "color": "default"
+      }
+    ],
+    "price": 10,
+    "geo": "-15.739972761177627, -47.899375872800995",
+    "location": "SCLRN 716 Bloco F Loja 47",
+    "region": {
+      "id": "959fbc39-9947-43a1-962a-d96d3d4d8784",
+      "name": "Asa Norte",
+      "color": "red"
+    },
+    "wifi": "tiramisu",
+    "name": "antonieta",
+    "id": "ef064c29"
+  },
+  {
     "slug": "civita",
     "instagram": "https://www.instagram.com/civitacafe/",
     "tags": [

@@ -46,6 +46,11 @@
           "id": "fe20e30c-345e-4b5f-9ce6-95f38341c2c6",
           "name": "💲",
           "color": "red"
+        },
+        {
+          "id": "cc66dbb0-fae4-4ec9-9e0a-a41e0e27c15b",
+          "name": "🍹",
+          "color": "default"
         }
       ]
     }
