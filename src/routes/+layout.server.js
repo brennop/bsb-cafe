@@ -62,9 +62,11 @@ const metadataQuery = () =>
 export async function load() {
   /** @type {Cafe[]} */
   const cafes = await dataQuery();
+  const metadata = await metadataQuery();
 
   return {
     cafes,
+    metadata,
   };
 }
 

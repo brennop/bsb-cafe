@@ -47,7 +47,7 @@
       points.forEach((point, index) => {
         const element = elements[index];
 
-        const marker = new maplibregl.Marker({
+        new maplibregl.Marker({
           draggable: false,
           scale: 1.0,
           element,

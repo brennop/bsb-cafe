@@ -22,6 +22,7 @@
   }
 
   setContext("cafes", data.cafes);
+  setContext("metadata", data.metadata);
   setContext("map", mapStore);
 </script>
 
@@ -38,7 +39,7 @@
     {/if}
   </div>
   <slot />
-  <footer class="text-center text-xs text-orange-800 p-3">
+  <footer class="text-center text-xs text-orange-800 p-3 mt-4">
     feito com <span class="text-red-500">☕</span> por
     <a href="https://brennn.in" target="_blank" rel="noopener noreferrer">
       brennin

@@ -1,5 +1,6 @@
-<script lang="ts">
-  export let color: string;
+<script>
+  /** @type {string} */
+  export let color;
 
   $: textColor = `text-${color}-800`;
   $: bgColor = `bg-${color}-100`;

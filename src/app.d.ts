@@ -20,6 +20,24 @@ declare global {
     slug: string;
     region: Option;
   }
+
+  type Option = {
+    name: string;
+    color: string;
+  };
+
+  type Metadata = {
+    region: {
+      select: {
+        options: Option[];
+      }
+    },
+    tags: {
+      multi_select: {
+        options: Option[];
+      }
+    },
+  }
 }
 
 export { };
