@@ -45,7 +45,14 @@ const dataQuery = () =>
         // @ts-ignore
         const [lat, lng] = cafe.geo.split(",").map((n) => parseFloat(n));
         const position = [lng, lat];
-        return { ...cafe, position };
+
+        // @ts-ignore
+        const tags = cafe.tags.map((tag) => {
+          const icon = tag.name.split(' ').at(0)
+          return { ...tag, icon }
+        })
+
+        return { ...cafe, position, tags };
       });
     });
 

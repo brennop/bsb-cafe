@@ -13,13 +13,17 @@ declare global {
     geo: string;
     position: [number, number];
     instagram?: string | null;
-    tags: Option[];
+    tags: Tag[];
     wifi?: string;
     location?: string;
     id: string;
     slug: string;
     region: Option;
   }
+
+  type Tag = {
+    icon: string;
+  } & Option;
 
   type Option = {
     name: string;

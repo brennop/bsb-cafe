@@ -19,9 +19,12 @@
 <section class="max-w-md w-full mx-auto p-3 overflow-y-auto flex-1">
   <div class="flex items-center gap-2">
     {#each cafe.tags as tag}
-      <span class="text-orange-800 bg-orange-100 px-1 py-0.5 rounded"
-        >{tag.name}</span
+      <span 
+        class="text-orange-800 bg-orange-100 px-1 py-0.5 rounded"
+        title={tag.name}
       >
+        {tag.icon}
+      </span>
     {/each}
   </div>
   {#if handle}
