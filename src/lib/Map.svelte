@@ -11,6 +11,9 @@
   /** @type {HTMLDivElement[]} */
   let elements = [];
 
+  /** @type {boolean} */
+  let loaded = false;
+
   /** @type {import("maplibre-gl").Map} */
   export let map;
 
@@ -40,6 +43,8 @@
     });
 
     map.on("load", () => {
+      loaded = true;
+
       // @ts-ignore
       const bounds = map.getSource("protomaps")?.bounds;
       map.setMaxBounds(bounds);
@@ -72,7 +77,7 @@
 
 <div bind:this={container} class="map w-full h-full" />
 
-<div>
+<div class:hidden={!loaded}>
   {#each points as point, index}
     <div class="z-10" bind:this={elements[index]}>
       <a href={`/${point.slug}`} class="flex flex-col items-center relative">
