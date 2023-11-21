@@ -54,6 +54,10 @@
         })
           .setLngLat(point.position)
           .addTo(map);
+
+        if (slug === point.slug) {
+          map.jumpTo({ center: point.position, zoom: 15 });
+        }
       });
     });
   });
