@@ -66,14 +66,16 @@ const metadataQuery = () =>
     });
 
 /** @type {import('./$types').LayoutServerLoad} */
-export async function load() {
+export async function load({ url }) {
   /** @type {Cafe[]} */
   const cafes = await dataQuery();
   const metadata = await metadataQuery();
+  const query = url.searchParams.get("q");
 
   return {
     cafes,
     metadata,
+    query,
   };
 }
 

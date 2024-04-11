@@ -5,7 +5,7 @@
 
 <a class="text-sm text-left" href={`/${cafe.slug}`}>
   <div class="flex items-center">
-    <h2 class="text-xl font-bold">{cafe.name}</h2>
+    <h2 class="text-xl font-bold mr-2">{cafe.name}</h2>
     <div class="flex gap-2">
       {#each cafe.tags as tag}
         <span 

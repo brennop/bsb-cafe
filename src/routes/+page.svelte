@@ -2,6 +2,7 @@
   import Item from "$lib/Item.svelte";
   import Badge from "$lib/Badge.svelte";
   import { getContext } from "svelte";
+  export let data = "";
 
   /** @type {Cafe[]} */
   const cafes = getContext("cafes");
@@ -10,7 +11,7 @@
   const metadata = getContext("metadata");
 
   /** @type {any | null} */
-  let regionFilter = null;
+  $: regionFilter = regions.find((region) => region.name === data.query) || null;
 
   $: filtered = cafes.filter((cafe) =>
     regionFilter ? cafe.region.name === regionFilter.name : true
@@ -23,26 +24,20 @@
 <div class="flex items-center gap-2 p-2 max-w-full overflow-x-auto">
   {#if regionFilter}
     <div class="shrink-0">
-      <Badge
-        on:click={() => {
-          regionFilter = null;
-        }}
-        color={regionFilter.color}
-      >
-        {regionFilter.name} ✕
-      </Badge>
+      <a href={`?q=`}>
+        <Badge color={regionFilter.color}>
+          {regionFilter.name} ✕
+        </Badge>
+      </a>
     </div>
   {:else}
     {#each regions as region}
       <div class="shrink-0">
-        <Badge
-          on:click={() => {
-            regionFilter = region;
-          }}
-          color={region.color}
-        >
-          {region.name}
-        </Badge>
+        <a href={`?q=${region.name}`}>
+          <Badge color={region.color}>
+            {region.name}
+          </Badge>
+        </a>
       </div>
     {/each}
   {/if}
