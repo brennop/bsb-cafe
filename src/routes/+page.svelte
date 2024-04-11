@@ -2,7 +2,7 @@
   import Item from "$lib/Item.svelte";
   import Badge from "$lib/Badge.svelte";
   import { getContext } from "svelte";
-  export let data = "";
+  import { page } from "$app/stores";
 
   /** @type {Cafe[]} */
   const cafes = getContext("cafes");
@@ -11,7 +11,7 @@
   const metadata = getContext("metadata");
 
   /** @type {any | null} */
-  $: regionFilter = regions.find((region) => region.name === data.query) || null;
+  $: regionFilter = regions.find((region) => region.name === $page.url.searchParams.get("q"));
 
   $: filtered = cafes.filter((cafe) =>
     regionFilter ? cafe.region.name === regionFilter.name : true
