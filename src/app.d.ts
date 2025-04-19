@@ -14,7 +14,7 @@ declare global {
     position: [number, number];
     instagram?: string | null;
     tags: Tag[];
-    wifi?: string;
+    link?: string;
     location?: string;
     id: string;
     slug: string;
