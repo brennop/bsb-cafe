@@ -87,7 +87,7 @@
           </span>
         {/if}
         <span class="text-lg h-8 w-8 rounded-full bg-orange-100 text-white flex items-center justify-center border-orange-800 border-2">
-          ☕</span>
+          {point.tags.at(0)?.icon || '🍲'}</span>
       </a>
     </div>
   {/each}

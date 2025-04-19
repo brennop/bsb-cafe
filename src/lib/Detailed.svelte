@@ -5,7 +5,9 @@
 
   const map = getContext("map");
 
-  $: $map?.flyTo({ center: cafe.position, zoom: 15, speed: 1.0 });
+  $: setTimeout(() => {
+    $map?.flyTo({ center: cafe.position, zoom: 15, speed: 1.0 });
+  }, 100);
 
   $: handle = cafe.instagram
     ?.replace(/https?:\/\/(www\.)?instagram\.com\//, "@")
@@ -16,7 +18,7 @@
   <a href="/" class="mr-2">☕</a>
   {cafe.name}
 </h1>
-<section class="max-w-md w-full mx-auto p-3 overflow-y-auto flex-1">
+<section class="max-w-md w-full mx-auto p-3 overflow-y-auto">
   <div class="flex items-center gap-2">
     {#each cafe.tags as tag}
       <span 

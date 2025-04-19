@@ -17,7 +17,7 @@
     regionFilter ? cafe.region.name === regionFilter.name : true
   );
 
-  const regions = metadata.region.select.options;
+  const regions = metadata.region?.select?.options || [];
 </script>
 
 <h1 class="text-4xl font-bold p-3 bg-orange-50">☕ café em bsb</h1>

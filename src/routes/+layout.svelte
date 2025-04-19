@@ -7,6 +7,7 @@
   import { browser } from "$app/environment";
   import { setContext } from "svelte";
   import { writable } from "svelte/store";
+  import { page } from "$app/stores";
 
   /** @type {import('./$types').LayoutData} */
   export let data;
@@ -21,6 +22,9 @@
     mapStore.set(map);
   }
 
+  // Check if we're on a detail page (/:slug)
+  $: isDetailPage = $page.params.slug !== undefined;
+
   setContext("cafes", data.cafes);
   setContext("metadata", data.metadata);
   setContext("map", mapStore);
@@ -29,7 +33,7 @@
 <main
   class="text-orange-900 bg-orange-50 h-screen flex flex-col justify-normal"
 >
-  <div class="h-80 w-full top-0 shrink-0">
+  <div class={isDetailPage ? "flex-1 w-full top-0" : "h-80 w-full top-0 shrink-0"}>
     {#if browser}
       <Map points={data.cafes} bind:map />
     {:else}
