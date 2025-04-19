@@ -7,11 +7,11 @@
 
   $: setTimeout(() => {
     $map?.flyTo({ center: cafe.position, zoom: 15, speed: 1.0 });
-  }, 100);
+  }, 10);
 </script>
 
 <h1 class="text-4xl font-bold p-3 bg-blue-50">
-  <a href="/" class="mr-2">☕</a>
+  <a href="/" class="mr-2">🔙</a>
   {cafe.name}
 </h1>
 <section class="max-w-md w-full mx-auto p-3 overflow-y-auto">
