@@ -10,7 +10,7 @@
   }, 100);
 </script>
 
-<h1 class="text-4xl font-bold p-3 bg-orange-50">
+<h1 class="text-4xl font-bold p-3 bg-blue-50">
   <a href="/" class="mr-2">☕</a>
   {cafe.name}
 </h1>
@@ -18,7 +18,7 @@
   <div class="flex items-center gap-2">
     {#each cafe.tags as tag}
       <span 
-        class="text-orange-800 bg-orange-100 px-1 py-0.5 rounded"
+        class="text-blue-800 bg-blue-100 px-1 py-0.5 rounded"
         title={tag.name}
       >
         {tag.name}
@@ -27,7 +27,7 @@
   </div>
   {#if cafe.link}
     <a
-      class="inline-block text-orange-800 bg-orange-100 px-1 py-0.5 rounded mt-2"
+      class="inline-block text-blue-800 bg-blue-100 px-1 py-0.5 rounded mt-2"
       href={cafe.link}
       target="_blank"
       rel="noopener noreferrer"
@@ -36,5 +36,5 @@
       {cafe.link}
     </a>
   {/if}
-  <p class="text-orange-800 mt-2">📍 {cafe.location}</p>
+  <p class="text-blue-800 mt-2">📍 {cafe.location}</p>
 </section>

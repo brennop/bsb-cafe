@@ -82,11 +82,11 @@
     <div class="z-10" bind:this={elements[index]}>
       <a href={`/${point.slug}`} class="flex flex-col items-center relative">
         {#if slug === point.slug}
-          <span class="text-xs bg-orange-100 px-1 py-0.5 rounded absolute -top-6 w-max ">
+          <span class="text-xs bg-blue-100 px-1 py-0.5 rounded absolute -top-6 w-max ">
             {point.name}
           </span>
         {/if}
-        <span class="text-lg h-8 w-8 rounded-full bg-orange-100 text-white flex items-center justify-center border-orange-800 border-2">
+        <span class="text-lg h-8 w-8 rounded-full bg-blue-100 text-white flex items-center justify-center border-blue-800 border-2">
           {point.tags.at(0)?.icon || '🍲'}</span>
       </a>
     </div>

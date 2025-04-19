@@ -20,7 +20,7 @@
   const regions = metadata.region?.select?.options || [];
 </script>
 
-<h1 class="text-4xl font-bold p-3 bg-orange-50">☕ café em bsb</h1>
+<h1 class="text-4xl font-bold p-3 bg-blue-50">🤔 onde comer</h1>
 <div class="flex items-center gap-2 p-2 max-w-full overflow-x-auto">
   {#if regionFilter}
     <div class="shrink-0">

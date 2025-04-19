@@ -9,9 +9,9 @@ export default defineConfig({
       registerType: "autoUpdate",
       includeAssets: ["favicon.ico", "apple-touch-icon.png", "mask-icon.svg"],
       manifest: {
-        name: "cafés em brasília",
+        name: "onde comer",
         short_name: "bsb.cafe",
-        description: "cafés em brasília",
+        description: "onde comer em brasília",
         theme_color: "#fff7ed",
         icons: [
           {

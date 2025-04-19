@@ -31,19 +31,19 @@
 </script>
 
 <main
-  class="text-orange-900 bg-orange-50 h-screen flex flex-col justify-normal"
+  class="text-blue-900 bg-blue-50 h-screen flex flex-col justify-normal"
 >
   <div class={isDetailPage ? "flex-1 w-full top-0" : "h-80 w-full top-0 shrink-0"}>
     {#if browser}
       <Map points={data.cafes} bind:map />
     {:else}
-      <div class="bg-orange-900 h-full w-full flex justify-center items-center">
+      <div class="bg-blue-900 h-full w-full flex justify-center items-center">
         <p class="text-white text-2xl">Carregando...</p>
       </div>
     {/if}
   </div>
   <slot />
-  <footer class="text-center text-xs text-orange-800 p-3 mt-4">
+  <footer class="text-center text-xs text-blue-800 p-3 mt-4">
     feito com <span class="text-red-500">☕</span> por
     <a href="https://brennn.in" target="_blank" rel="noopener noreferrer">
       brennin

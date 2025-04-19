@@ -9,7 +9,7 @@
     <div class="flex gap-2">
       {#each cafe.tags as tag}
         <span 
-          class="text-orange-800 bg-orange-100 px-1 py-0.5 rounded"
+          class="text-blue-800 bg-blue-100 px-1 py-0.5 rounded"
           title={tag.name}
         >
           {tag.icon}
@@ -17,5 +17,5 @@
       {/each}
     </div>
   </div>
-  <p class="text-orange-800">📍 {cafe.location}</p>
+  <p class="text-blue-800">📍 {cafe.location}</p>
 </a>
