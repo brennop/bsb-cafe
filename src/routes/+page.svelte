@@ -13,14 +13,28 @@
   /** @type {any | null} */
   $: regionFilter = regions.find((region) => region.name === $page.url.searchParams.get("q"));
 
-  $: filtered = cafes.filter((cafe) =>
-    regionFilter ? cafe.region.name === regionFilter.name : true
-  );
+  let searchQuery = "";
+
+  $: filtered = cafes.filter((cafe) => {
+    const regionMatch = regionFilter ? cafe.region.name === regionFilter.name : true;
+    const searchMatch = cafe.name.toLowerCase().includes(searchQuery.toLowerCase());
+    return regionMatch && searchMatch;
+  });
 
   const regions = metadata.region?.select?.options || [];
 </script>
 
 <h1 class="text-4xl font-bold p-3 bg-blue-50">🤔 onde comer</h1>
+
+<div class="p-2">
+  <input
+    type="text"
+    placeholder="Buscar por nome..."
+    bind:value={searchQuery}
+    class="w-full p-2 border border-gray-300 rounded-md"
+  />
+</div>
+
 <div class="flex items-center gap-2 p-2 max-w-full overflow-x-auto">
   {#if regionFilter}
     <div class="shrink-0">
