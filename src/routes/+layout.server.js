@@ -23,12 +23,6 @@ const dataQuery = () =>
             return [key, value[value.type][0]?.plain_text];
           }
 
-          // Handle multi_select properties like 'cards'
-          if (value.type === "multi_select") {
-             // @ts-ignore
-            return [key, value[value.type].map(option => option.name)];
-          }
-
           return [key, value[value.type]];
         });
 

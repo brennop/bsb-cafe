@@ -23,7 +23,6 @@
   // Determine the selected card filter based on the 'card' search parameter
   $: cardFilter = cardsOptions.find((card) => card.name === $page.url.searchParams.get("card"));
 
-
   let searchQuery = "";
 
   // Filter the cafes based on selected region, card, and search query
@@ -32,7 +31,7 @@
     const regionMatch = regionFilter ? cafe.region.name === regionFilter.name : true;
     // Check if the cafe matches the selected card filter (if any)
     // A cafe matches if its 'cards' array includes the selected card name
-    const cardMatch = cardFilter ? cafe.cards.includes(cardFilter.name) : true;
+    const cardMatch = cardFilter ? cafe.cards.map(card => card.name).includes(cardFilter.name) : true;
     // Check if the cafe name includes the search query (case-insensitive)
     const searchMatch = cafe.name.toLowerCase().includes(searchQuery.toLowerCase());
 
@@ -44,31 +43,6 @@
 <h1 class="text-4xl font-bold p-3 bg-blue-50">🤔 onde comer</h1>
 
 <!-- Region Filters -->
-<div class="flex items-center gap-2 p-2 max-w-full overflow-x-auto">
-  {#if regionFilter}
-    <div class="shrink-0">
-      <!-- Link to remove the region filter -->
-      <a href={`?q=&card=${$page.url.searchParams.get("card") || ''}`}>
-        <Badge color={regionFilter.color}>
-          {regionFilter.name} ✕
-        </Badge>
-      </a>
-    </div>
-  {:else}
-    {#each regions as region}
-      <div class="shrink-0">
-        <!-- Link to apply a region filter, preserving card filter -->
-        <a href={`?q=${region.name}&card=${$page.url.searchParams.get("card") || ''}`}>
-          <Badge color={region.color}>
-            {region.name}
-          </Badge>
-        </a>
-      </div>
-    {/each}
-  {/if}
-</div>
-
-<!-- Card Filters -->
 <div class="flex items-center gap-2 p-2 max-w-full overflow-x-auto">
   {#if cardFilter}
     <div class="shrink-0">
@@ -86,6 +60,28 @@
         <a href={`?q=${$page.url.searchParams.get("q") || ''}&card=${card.name}`}>
           <Badge color={card.color}>
             {card.name}
+          </Badge>
+        </a>
+      </div>
+    {/each}
+  {/if}
+
+  {#if regionFilter}
+    <div class="shrink-0">
+      <!-- Link to remove the region filter -->
+      <a href={`?q=&card=${$page.url.searchParams.get("card") || ''}`}>
+        <Badge color={regionFilter.color}>
+          {regionFilter.name} ✕
+        </Badge>
+      </a>
+    </div>
+  {:else}
+    {#each regions as region}
+      <div class="shrink-0">
+        <!-- Link to apply a region filter, preserving card filter -->
+        <a href={`?q=${region.name}&card=${$page.url.searchParams.get("card") || ''}`}>
+          <Badge color={region.color}>
+            {region.name}
           </Badge>
         </a>
       </div>

@@ -19,7 +19,10 @@ declare global {
     id: string;
     slug: string;
     region: Option;
-    cards: string[]; // Added cards property
+    cards: {
+      name: string;
+      color: string;
+    }[]; 
   }
 
   type Tag = {
@@ -42,7 +45,6 @@ declare global {
         options: Option[];
       }
     },
-    // Added cards metadata definition
     cards: {
       multi_select: {
         options: Option[];

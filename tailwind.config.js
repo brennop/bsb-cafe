@@ -16,5 +16,7 @@ export default {
     'text-blue-800',
     'bg-purple-100',
     'text-purple-800',
+    'bg-orange-100',
+    'text-orange-800',
   ]
 };
