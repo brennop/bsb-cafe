@@ -26,15 +26,6 @@
 
 <h1 class="text-4xl font-bold p-3 bg-blue-50">🤔 onde comer</h1>
 
-<div class="p-2">
-  <input
-    type="text"
-    placeholder="Buscar por nome..."
-    bind:value={searchQuery}
-    class="w-full p-2 border border-gray-300 rounded-md"
-  />
-</div>
-
 <div class="flex items-center gap-2 p-2 max-w-full overflow-x-auto">
   {#if regionFilter}
     <div class="shrink-0">
@@ -56,6 +47,16 @@
     {/each}
   {/if}
 </div>
+
+<div class="p-2">
+  <input
+    type="text"
+    placeholder="Buscar por nome..."
+    bind:value={searchQuery}
+    class="w-full p-2 border border-gray-300 rounded-md"
+  />
+</div>
+
 <section
   class="max-w-md w-full mx-auto p-3 flex flex-col gap-4 overflow-y-auto flex-1"
 >
