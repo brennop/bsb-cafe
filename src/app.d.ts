@@ -19,6 +19,7 @@ declare global {
     id: string;
     slug: string;
     region: Option;
+    cards: string[]; // Added cards property
   }
 
   type Tag = {
@@ -41,6 +42,13 @@ declare global {
         options: Option[];
       }
     },
+    // Assuming cards metadata isn't needed directly in the frontend layout,
+    // but if it were, you'd add it here similarly to tags.
+    // cards: {
+    //   multi_select: {
+    //     options: Option[];
+    //   }
+    // },
   }
 }
 
