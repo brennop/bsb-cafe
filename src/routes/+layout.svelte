@@ -30,10 +30,10 @@
   setContext("map", mapStore);
 </script>
 
-<main
-  class="text-blue-900 bg-blue-50 h-screen flex flex-col justify-normal"
->
-  <div class={isDetailPage ? "flex-1 w-full top-0" : "h-80 w-full top-0 shrink-0"}>
+<main class="text-blue-900 bg-blue-50 h-screen flex flex-col justify-normal">
+  <div
+    class={isDetailPage ? "flex-1 w-full top-0" : "h-80 w-full top-0 shrink-0"}
+  >
     {#if browser}
       <Map points={data.cafes} bind:map />
     {:else}
@@ -43,10 +43,23 @@
     {/if}
   </div>
   <slot />
-  <footer class="text-center text-xs text-blue-800 p-3 mt-4">
-    feito com <span class="text-red-500">☕</span> por
-    <a href="https://brennn.in" target="_blank" rel="noopener noreferrer">
-      brennin
-    </a>
+  <footer class="text-center text-xs text-blue-800 p-3 mt-4 flex gap-2 items-center justify-center">
+    <div>
+      feito com <span class="text-red-500 mx-1">☕</span> por
+      <a href="https://brennn.in" target="_blank" rel="noopener noreferrer" class="underline">
+        brennin
+      </a>
+    </div>
+    •
+    <div>
+      <a
+        href="https://brennop.notion.site/1e7911566e58802e8cc3d8f554ffb750?pvs=105"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="underline"
+      >
+        Sugerir um local
+      </a>
+    </div>
   </footer>
 </main>
