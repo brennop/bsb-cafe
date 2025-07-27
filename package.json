@@ -31,5 +31,8 @@
 		"pmtiles": "^4.3.0",
 		"protomaps-themes-base": "^4.5.0"
 	},
+  "engines": {
+    "node": "22.x"
+  },
 	"type": "module"
 }
